@@ -19,4 +19,4 @@ if type(days:=args.days) == str:
     days = int(days)
 past_date = date - timedelta(days=days)
 
-print(past_date.strftime('%Y-%m-%d'))
+print(f"{date.strftime('%Y-%m-%d')} 的 {days} 天前是 {past_date.strftime('%Y-%m-%d')}")
